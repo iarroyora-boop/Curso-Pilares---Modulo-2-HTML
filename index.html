@@ -14,33 +14,89 @@
     <!-- Parrafo de texto -->
     <p>Bienvenido a <em>Mal Genio</em>, la <strong> experiencia gastronomica </strong> que querras volver a probar</p>
 
+    <p>Mal Genio es un restaurante de comida mexicana contemporánea que se especializa en ofrecer una experiencia gastronómica única y auténtica. Con un enfoque en ingredientes frescos y técnicas culinarias innovadoras, Mal Genio busca sorprender a sus comensales con sabores audaces y presentaciones creativas. El menú del restaurante incluye una variedad de platillos que fusionan la tradición mexicana con influencias modernas,creando una propuesta gastronomica única. Además, el ambiente del restaurante está diseñado para ser acogedor y vibrante, haciendo de cada visita una experiencia memorable para los amantes del buen comer.
+    </p>
+
     <blockquote cite="https://www.instagram.com/malgenio.mx/"> <!-- Cita de fuente externa -->
-        <p>
-            Mal Genio es un restaurante de comida mexicana contemporánea que se especializa en ofrecer una experiencia gastronómica única y auténtica. Con un enfoque en ingredientes frescos y técnicas culinarias innovadoras, Mal Genio busca sorprender a sus comensales con sabores audaces y presentaciones creativas. El menú del restaurante incluye una variedad de platillos que fusionan la tradición mexicana con influencias modernas,creando una propuesta gastronomica única. Además, el ambiente del restaurante está diseñado para ser acogedor y vibrante, haciendo de cada visita una experiencia memorable para los amantes del buen comer.
-        </p>
     </blockquote>
 
 <hr> <!-- Línea horizontal para separar secciones -->
 
-    <h2>Síguenos en nuestras redes sociales</h2>
+    <aside>
+        <h3>Síguenos en nuestras redes sociales</h3>
+    </aside>
         <ul>
-            <li><a href="https://www.instagram.com/malgenio.mx/">Instagram</a></li> <!-- Enlace a Instagram -->
-            <li><a href="https://www.facebook.com/p/Mal-Genio-61577065913679/">Facebook</a></li> <!-- Enlace a Facebook -->
-            <li><a href="https://www.malgenio.mx">Sitio Web Oficial</a></li> <!-- Enlace al sitio web oficial -->
+            <li><a href="https://www.instagram.com/malgenio.mx/" target="_blank">Instagram</a></li> <!-- Enlace a Instagram -->
+            <li><a href="https://www.facebook.com/p/Mal-Genio-61577065913679/" target="_blank">Facebook</a></li> <!-- Enlace a Facebook -->
+            <li><a href="http://127.0.0.1:5500/index.html/mi_pagina_web.html" target="_blank">Sitio Web Oficial</a></li> <!-- Enlace al sitio web oficial -->
         </ul>
 
         <figure>
-        <img src="https://scontent.fmex42-1.fna.fbcdn.net/v/t39.30808-6/545572584_122140120214902197_3581623128586047914_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=7nQqh11hjnIQ7kNvwHRZZs9&_nc_oc=Adr3ef8IoctK_Z-ckpeqafc232DmIcpryEeZpNlOb6vZkGx0j8zF5ePqg7jF1bEiuyBoSjq2YAzGNfgQrwRSQSLG&_nc_zt=23&_nc_ht=scontent.fmex42-1.fna&_nc_gid=PNLQ6RjEzWiGd_q6D-rZsA&_nc_ss=7a32e&oh=00_Afyon0mxNKL_xWqQi3_QS065vYyDDKeZUMktRCfeSfmEnw&oe=69CA94EB" alt="Mal Genio" width="300"/> 
-        <figcaption>Mal Genio MX.</figcaption> <!-- Pie de foto para la imagen -->
-        </figure> <!-- Imagen del restaurante -->  
+        <img src="https://scontent.fmex42-1.fna.fbcdn.net/v/t39.30808-6/545572584_122140120214902197_3581623128586047914_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=7nQqh11hjnIQ7kNvwHRZZs9&_nc_oc=Adr3ef8IoctK_Z-ckpeqafc232DmIcpryEeZpNlOb6vZkGx0j8zF5ePqg7jF1bEiuyBoSjq2YAzGNfgQrwRSQSLG&_nc_zt=23&_nc_ht=scontent.fmex42-1.fna&_nc_gid=PNLQ6RjEzWiGd_q6D-rZsA&_nc_ss=7a32e&oh=00_Afyon0mxNKL_xWqQi3_QS065vYyDDKeZUMktRCfeSfmEnw&oe=69CA94EB" alt="Mal Genio" width="170"/> 
+        <figure><small>Mal Genio MX.</small></figure><figcaption> <!-- Pie de foto para la imagen -->
+        </figure> <!-- Imagen del restaurante -->
+
+
+<h2>Agendar Reserva</h2>
+    <form action="#" method="get">    
+        <fieldset> <legend>Información personal</legend> 
+        <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre"> <br> <br> 
+        <label for="phone">Telefono:</label>
+            <input type="text" id="phone" name="phone" required pattern="[0-9]{9}" title="Diez dígitos numéricos"
+placeholder="Compartenos tu número"> <br> <br>
+        <nav>Locación</nav><select name="location" id="country">
+            <option value="location1">TLATELOLCO</option>
+            <option value="location2">MUMEDI</option>
+            <option value="location3">CHECHE</option>
+        </select> <br> <br>
+        <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" >  <br> <br>
+    <button>Agendar reserva</button>  <br> <br>
+    <nav>También puedes reservar comunicandote al</nav><a href="tel:+525663882183"> +525663882183</a>
+    </fieldset> <br> <br>
+    </form>
+
+
+<h2>Registrate a nuestra Newsletter</h2>
+    <form action="./js/formularios.js" method="post">
+        <fieldset> <legend>Información personal</legend>
+        <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre"> <br> <br> 
+        <label for="phone">Telefono:</label>
+            <input type="text" id="phone" name="phone" required pattern="[0-9]{9}" title="Diez dígitos numéricos"
+placeholder="Compartenos tu número"> <br> <br>
+        <label for="mail">Correo:</label>
+            <input type="text" id="mail" name="mail" placeholder="Compartenos tu correo"> <br> <br>
+        <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password"  required minlength="8" placeholder="Crea una contraseña" >  <br> <br>
+        <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" min="15" max="99" step="1 required" placeholder="Escribe tu edad" > <br> <br>
+        <label for="country">Pais:</label> <br> <br>
+            <input type="radio" id="Mex" name="country">Mexico<br> <br>
+            <input type="radio" id="Col" name="country">Colombia <br> <br>
+            <input type="radio" id="CR" name="country">Costa Rica <br> <br>
+        <label for="option">Newsletter semanal :</label>
+            <input type="checkbox" id="option" name="option" > <br> <br>
+        <label for="option">Newsletter menesual :</label>
+            <input type="checkbox" id="option" name="option" > <br> <br>
+        <label for="comment">Deja tu comentario:</label>
+            <textarea name comment id="comment"> </textarea> <br> <br>
+    <input type="submit" value="Enviar"> <br> <br>
+    </fieldset>
+    </form>
+
 
 <hr> <!-- Línea horizontal para separar secciones -->
 
     <h2>¿Dónde encontrarnos?</h2> <!-- Subtitulo -->
 
     <address> <!-- Información de contacto -->
-        Calle Bucareli 35, Ciudad de México, México -
-            <small> Colaboración con MUMEDI (Museo Mexicano de Diseño)</small><br>
+       <nav>TLATELOLCO</nav> Edificio Chihuahua, Colonia Tlatelolco. Plaza de las tres culturas, Ciudad de México.<br> <br>
+       <nav>MUMEDI</nav> Calle Bucareli 35, Colonia Juarez, Ciudad de México -
+            <small> Colaboración con MUMEDI (Museo Mexicano de Diseño)</small><br><br>
+       <nav>CHECHE</nav> Calle Fresno 72, Colonia Santa María la Ribera, Ciudad de México -
+            <small> Colaboración con cafeterias CHECHE </small><br> <br>
         Teléfono: (55) 1234-5678<br>
         Correo electrónico: info@malgenio.mx<br><br><br>
 
